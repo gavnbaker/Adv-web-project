@@ -26,12 +26,10 @@
         </asp:ContentPlaceHolder>
       </section>
       <aside id="Sidebar">
-        Select a theme
-          <br />
-          <asp:TreeView ID="TreeView1" runat="server">
+          Menu:<asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
           </asp:TreeView>
-        <br />
-        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+          <br />
+        Select a theme:<asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
           <asp:ListItem>Bakery</asp:ListItem>          
         </asp:DropDownList>
       </aside>
