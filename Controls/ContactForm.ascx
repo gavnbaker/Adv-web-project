@@ -50,6 +50,7 @@
     .auto-style12 {
         text-align: left;
     }
+
 </style>
 
 <script>
@@ -79,7 +80,7 @@
             <asp:TextBox ID="Name" runat="server"></asp:TextBox>
         </td>
         <td class="auto-style12">
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Name" CssClass="ErrorMessage" ErrorMessage="Enter your name">*Required</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Name" CssClass="ErrorMessage" ErrorMessage="Enter your name" Display="Dynamic">*Required</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
