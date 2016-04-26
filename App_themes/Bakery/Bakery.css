@@ -3,7 +3,7 @@
   /* 
     Defines the main font used throughout the entire site.
   */
-  font-family: Arial, Sans-Serif;
+  font-family:Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif ;
 }
 
 body
@@ -103,7 +103,7 @@ nav
     /*
     Links in the Menu are white. This gets overriden by styles in chapter 7.
   */
-    color: #fff;
+    color: #cccccc ;
   }
 
 .MainMenu
@@ -114,7 +114,7 @@ nav
   border: 1px solid #999999;
   width: 814px;
   height: 19px;
-  background-color: #555555;
+  background-color: #0a0f2c ;
 }
 
   .MainMenu ul li
@@ -132,7 +132,7 @@ section#MainContent
     The font-size is 80% of its parent element, which in this case comes down to 80% of the font
     the user has specified as the default font in the browser.
   */
-  font-size: 0.8em;
+  font-size: 0.9em;
   width: 659px;
   border-left: 1px solid white;
   border-right: 2px solid white;
@@ -150,7 +150,7 @@ aside#Sidebar
 	To ensure the image is visible in (most) browsers on a small page, the element gets a minimum 
 	height of 500px. This is ignored by IE 6.
   */
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: White;
   background-image: url(Images/Sidebar.jpg);
   background-repeat: no-repeat;
@@ -207,7 +207,7 @@ ul.level1
 ul.level1 .selected
 {
     /* Defines the appearance of active menu items. */
-    background-color: #509EE7;
+    background-color: #dfe2c7 ;
 }
 a.level1
 {
@@ -218,13 +218,13 @@ a.level1
 a.level2
 {
     /* Defines the appearance of the sub menu items. */
-    background-color: #A8D5FE;
+    background-color: #5487c0 ;
     padding-left: 8px;
 }
 a.level1:hover, a.level2:hover
 {
     /* Defines the hover style for the main and sub items. */
-    background-color: #509EE7;
+    background-color: #e76d2e;
 }
 
 .ErrorMessage {
