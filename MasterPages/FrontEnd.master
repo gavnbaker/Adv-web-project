@@ -12,13 +12,16 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            width: 842px;
+        }
     </style>
 </head>
 <body>
   <form id="form1" runat="server">
     <div id="PageWrapper">
       <header><a href="/"></a></header>
-        <nav>
+        <nav class="auto-style2">
         <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" StaticEnableDefaultPopOutImage="False">
         </asp:Menu>
         
