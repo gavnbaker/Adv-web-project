@@ -8,6 +8,11 @@
   </asp:ContentPlaceHolder>
   <link href="../App_themes/Bakery/Bakery.css" rel="stylesheet" />
   <script src="/Scripts/modernizr-2.7.1.js"></script>    
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
   <form id="form1" runat="server">
@@ -35,7 +40,14 @@
           <asp:ListItem>Bakery</asp:ListItem>          
         </asp:DropDownList>
       </aside>
-      <footer>Copyright of Gavin Baker</footer>
+      <footer class="auto-style1">
+          <asp:LoginName ID="LoginName1" runat="server" FormatString="Logged in as {0}" />
+          <asp:LoginView ID="LoginView1" runat="server">
+              <LoggedInTemplate>
+                  <asp:LoginStatus ID="LoginStatus1" runat="server" />
+              </LoggedInTemplate>
+          </asp:LoginView>
+          Copyright of Gavin Baker</footer>
     </div>
   </form>
 </body>

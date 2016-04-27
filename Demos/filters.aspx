@@ -6,7 +6,7 @@
     <p>
     </p>
     <p>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Customer] WHERE [CustomerID] = @CustomerID" InsertCommand="INSERT INTO [Customer] ([CustomerID], [FirstName], [LastName], [Street], [City], [State], [ZipCode], [TelephoneNumber], [Email], [UserID]) VALUES (@CustomerID, @FirstName, @LastName, @Street, @City, @State, @ZipCode, @TelephoneNumber, @Email, @UserID)" SelectCommand="SELECT * FROM [Customer] WHERE ([UserID] = @UserID)" UpdateCommand="UPDATE [Customer] SET [FirstName] = @FirstName, [LastName] = @LastName, [Street] = @Street, [City] = @City, [State] = @State, [ZipCode] = @ZipCode, [TelephoneNumber] = @TelephoneNumber, [Email] = @Email, [UserID] = @UserID WHERE [CustomerID] = @CustomerID">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Customer] WHERE [CustomerID] = @CustomerID" InsertCommand="INSERT INTO [Customer] ([CustomerID], [FirstName], [LastName], [State], [UserId], [Email], [ZipCode]) VALUES (@CustomerID, @FirstName, @LastName, @State, @UserId, @Email, @ZipCode)" SelectCommand="SELECT [CustomerID], [FirstName], [LastName], [State], [UserId], [Email], [ZipCode] FROM [Customer] WHERE ([UserId] = @UserId)" UpdateCommand="UPDATE [Customer] SET [FirstName] = @FirstName, [LastName] = @LastName, [State] = @State, [UserId] = @UserId, [Email] = @Email, [ZipCode] = @ZipCode WHERE [CustomerID] = @CustomerID">
             <DeleteParameters>
                 <asp:Parameter Name="CustomerID" Type="Int32" />
             </DeleteParameters>
@@ -14,27 +14,21 @@
                 <asp:Parameter Name="CustomerID" Type="Int32" />
                 <asp:Parameter Name="FirstName" Type="String" />
                 <asp:Parameter Name="LastName" Type="String" />
-                <asp:Parameter Name="Street" Type="String" />
-                <asp:Parameter Name="City" Type="String" />
                 <asp:Parameter Name="State" Type="String" />
-                <asp:Parameter Name="ZipCode" Type="String" />
-                <asp:Parameter Name="TelephoneNumber" Type="String" />
+                <asp:Parameter Name="UserId" Type="String" />
                 <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="UserID" Type="String" />
+                <asp:Parameter Name="ZipCode" Type="String" />
             </InsertParameters>
             <SelectParameters>
-                <asp:ControlParameter ControlID="DropDownList1" Name="UserID" PropertyName="SelectedValue" Type="String" />
+                <asp:ControlParameter ControlID="DropDownList1" Name="UserId" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
             <UpdateParameters>
                 <asp:Parameter Name="FirstName" Type="String" />
                 <asp:Parameter Name="LastName" Type="String" />
-                <asp:Parameter Name="Street" Type="String" />
-                <asp:Parameter Name="City" Type="String" />
                 <asp:Parameter Name="State" Type="String" />
-                <asp:Parameter Name="ZipCode" Type="String" />
-                <asp:Parameter Name="TelephoneNumber" Type="String" />
+                <asp:Parameter Name="UserId" Type="String" />
                 <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="UserID" Type="String" />
+                <asp:Parameter Name="ZipCode" Type="String" />
                 <asp:Parameter Name="CustomerID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
@@ -43,20 +37,18 @@
         </asp:DropDownList>
         <br />
     </p>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [Type] FROM [Users] ORDER BY [Type]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [Type] FROM [ControlRoles] ORDER BY [Type]">
+    </asp:SqlDataSource>
     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="CustomerID" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="CustomerID" HeaderText="CustomerID" ReadOnly="True" SortExpression="CustomerID" />
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
             <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-            <asp:BoundField DataField="Street" HeaderText="Street" SortExpression="Street" />
-            <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
             <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" />
-            <asp:BoundField DataField="ZipCode" HeaderText="ZipCode" SortExpression="ZipCode" />
-            <asp:BoundField DataField="TelephoneNumber" HeaderText="TelephoneNumber" SortExpression="TelephoneNumber" />
+            <asp:BoundField DataField="UserId" HeaderText="UserId" SortExpression="UserId" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-            <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
+            <asp:BoundField DataField="ZipCode" HeaderText="ZipCode" SortExpression="ZipCode" />
         </Columns>
     </asp:GridView>
     <p>
@@ -65,13 +57,10 @@
                 <asp:BoundField DataField="CustomerID" HeaderText="CustomerID" ReadOnly="True" SortExpression="CustomerID" />
                 <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
                 <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                <asp:BoundField DataField="Street" HeaderText="Street" SortExpression="Street" />
-                <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
                 <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" />
-                <asp:BoundField DataField="ZipCode" HeaderText="ZipCode" SortExpression="ZipCode" />
-                <asp:BoundField DataField="TelephoneNumber" HeaderText="TelephoneNumber" SortExpression="TelephoneNumber" />
+                <asp:BoundField DataField="UserId" HeaderText="UserId" SortExpression="UserId" />
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
+                <asp:BoundField DataField="ZipCode" HeaderText="ZipCode" SortExpression="ZipCode" />
                 <asp:CommandField ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>

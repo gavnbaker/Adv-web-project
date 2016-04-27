@@ -68,9 +68,9 @@ header {
     Gives the header the same width as the PageWrapper. The height creates some room for the logo
     that is set with the background-image.
   */
-    background-image: url('Images/1_6_bakery_display_wip_by_thinkpastel-d6wwqlr.jpg');
+    background-image: url('Images/bakery_by_piximi.jpg');
     /*background-image: url(Images/Header.jpg);*/
-    width: 844px;
+    width: 800px;
     height: 500px;
 }
 
@@ -207,7 +207,7 @@ ul.level1
 ul.level1 .selected
 {
     /* Defines the appearance of active menu items. */
-    background-color: #dfe2c7 ;
+    background-color: #e76d2e ;
 }
 a.level1
 {
