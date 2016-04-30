@@ -1,0 +1,6 @@
+﻿INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (1, N'Chesse Cake')
+INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (2, N'Muffin')
+INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (3, N'Brownie')
+INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (4, N'Chocolate')
+INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (5, N'Sweet Potato Pie')
+INSERT INTO [dbo].[ProductType] ([ProductTypeId], [Description]) VALUES (6, N'Corn Muffin')

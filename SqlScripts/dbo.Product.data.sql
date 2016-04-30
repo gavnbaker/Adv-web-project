@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[Product] ([ProductId], [Name], [Price], [ProductTypeId]) VALUES (2, N'Cheese Cake              ', CAST(7.80 AS Decimal(7, 2)), 1)
+INSERT INTO [dbo].[Product] ([ProductId], [Name], [Price], [ProductTypeId]) VALUES (4, N'Muffin                   ', CAST(3.00 AS Decimal(7, 2)), 2)
+INSERT INTO [dbo].[Product] ([ProductId], [Name], [Price], [ProductTypeId]) VALUES (6, N'Brownie                  ', CAST(1.25 AS Decimal(7, 2)), 3)
+INSERT INTO [dbo].[Product] ([ProductId], [Name], [Price], [ProductTypeId]) VALUES (8, N'Chocolate                ', CAST(1.50 AS Decimal(7, 2)), 4)
+INSERT INTO [dbo].[Product] ([ProductId], [Name], [Price], [ProductTypeId]) VALUES (10, N'Sweet Potato Pie         ', CAST(4.50 AS Decimal(7, 2)), 5)

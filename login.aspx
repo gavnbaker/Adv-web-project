@@ -15,15 +15,11 @@
     <p class="auto-style2">
         <asp:LoginView ID="LoginView1" runat="server" OnViewChanged="LoginView1_ViewChanged">
             <AnonymousTemplate>
-                <asp:Login ID="Login1" runat="server" CreateUserText="Sign Up " CreateUserUrl="~/SignUp.aspx" DestinationPageUrl="~/Default.aspx" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="273px" Width="593px">
-                    <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
-                    <LoginButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
-                    <TextBoxStyle Font-Size="0.8em" />
-                    <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                <asp:Login ID="Login1" runat="server" CreateUserText="Sign Up " CreateUserUrl="~/SignUp.aspx" DestinationPageUrl="~/Management/Default.aspx" Height="273px" Width="593px">
                 </asp:Login>
             </AnonymousTemplate>
             <LoggedInTemplate>
-                You are already logged in.
+                You are already logged in.<br /> &nbsp;Click Here to enter <a href="Management/Default.aspx">Management</a>
             </LoggedInTemplate>
         </asp:LoginView>
     </p>

@@ -9,6 +9,7 @@ public partial class Management_customer : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //SqlDataSource1.Insert();
+        
     }
 }

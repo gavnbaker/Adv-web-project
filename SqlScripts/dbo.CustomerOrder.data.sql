@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[CustomerOrder] ([OrderId], [Date], [Time], [CustomerId]) VALUES (1500, N'2016-11-27', N'11:44:00', 10)
+INSERT INTO [dbo].[CustomerOrder] ([OrderId], [Date], [Time], [CustomerId]) VALUES (1600, N'2016-03-14', N'17:24:00', 14)
+INSERT INTO [dbo].[CustomerOrder] ([OrderId], [Date], [Time], [CustomerId]) VALUES (1700, N'2016-04-17', N'18:45:00', 16)
+INSERT INTO [dbo].[CustomerOrder] ([OrderId], [Date], [Time], [CustomerId]) VALUES (1800, N'2016-05-16', N'03:24:00', 18)
+INSERT INTO [dbo].[CustomerOrder] ([OrderId], [Date], [Time], [CustomerId]) VALUES (2000, N'2016-04-17', N'03:55:00', 18)
